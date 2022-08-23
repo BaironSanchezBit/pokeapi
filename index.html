@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +8,10 @@
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #EF534F;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" alt="" width="150" height="44">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,22 +26,25 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white">Disabled</a>
-                    </li>
+                    </li>   
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="busqueda">
+                    <button class="btn btn-outline-light" type="button" id="btn-busqueda-api">PokeBusca</button>
                 </form>
             </div>
         </div>
     </nav>
-
-    <div class="container" id="cartas-pokemons">
+    <section class="container mt-5">
+        <div class="row row-cols-2 row-cols-md-4 g-4" id="cartas-pokemon">
         
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center p-5" id="paginacion">
+
     </div>
+    <script src="assets/js/code.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
